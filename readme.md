@@ -18,7 +18,7 @@ Pwronco utilizes the full power of multiple cutting edge Open Source tools for w
 
 Highlight Technologies
 
-* .Net Standard2.1 - .Net Core 3.1
+* .Net Standard2.1 - .Net Core 3.1.0-preview4.19579.2
 * Blazor Web Assembly (*preview*)
 * PWABuilder 1.0.0
 * Radzen UI
