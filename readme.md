@@ -2,6 +2,17 @@
 
   <img src="https://i.imgur.com/74oFW4t.png" width="250" height="250">
 
+To Run Pwronco: Navigate to working director and run via CLI of choice. 
+
+1. ```git clone https://github.com/BrogrammerGV/Pwronco.git ```
+2. ``` cd Pwronco```
+3. ```dotnet restore```
+4. ```dotnet build``` *(check for package errors / update accordingly) Must have .net Core 3.1/.netStandard2.1 installed*
+5. ```dotnet run```
+6. Navigate to http://localhost:5000
+
+note: You can test offline capability and reload on reconnection by killing the .net process, or by closing CLI
+
 
 Pwronco utilizes the full power of multiple cutting edge Open Source tools for web development.
 
