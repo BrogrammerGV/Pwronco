@@ -1,0 +1,26 @@
+﻿@inherits LayoutComponentBase
+
+<div class="sidebar @NavMenuCssClass">
+    <NavMenu />
+</div>
+
+<div class="main">
+    <div class="top-row px-4">
+      <RadzenButton Click="@HideMenu" Text="@collapseText" Style="" />
+    </div>
+
+    <div class="content px-4">
+        @Body
+    </div>
+</div>
+
+
+@code {
+    private bool hideMenu = false;
+    private string collapseText => hideMenu ? "Show Navigation" : "Full Screen";
+    private string NavMenuCssClass => hideMenu ? "collapse" : null;
+
+    private void HideMenu(){
+        hideMenu = !hideMenu;
+    }
+}

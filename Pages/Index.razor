@@ -1,0 +1,47 @@
+﻿@page "/"
+@using System.IO
+@using Microsoft.EntityFrameworkCore
+@using Microsoft.AspNetCore.Hosting
+@using Microsoft.AspNetCore.Components.Authorization
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
+
+<div class="row">
+    <div class="col-md-6">       
+        <h3>Login with register</h3>
+        <RadzenCard>
+            <RadzenLogin AllowResetPassword="false" 
+                            Login="@((args) => Login(args, "Login with register"))" 
+                            Register="@((args) => Register("Login with register"))" Style="margin-bottom: 20px;" />
+        </RadzenCard>
+    </div>
+</div>
+
+@code {
+    string userName = "admin";
+    string password = "admin";
+
+    Dictionary<DateTime, string> events = new Dictionary<DateTime, string>();
+
+    async void Login(LoginArgs args, string name)
+    {
+        await localStorage.SetItemAsync("name", args.Username);
+        StateHasChanged();
+    }
+
+    void Register(string name)
+    {
+        events.Add(DateTime.Now, $"{name} -> Register");
+        StateHasChanged();
+    }
+
+    void ResetPassword(string value, string name)
+    {
+        events.Add(DateTime.Now, $"{name} -> ResetPassword for user: {value}");
+        StateHasChanged();
+    }
+    
+     string GetTextForNode(object data)
+    {
+        return Path.GetFileName((string)data);        
+    }
+}
