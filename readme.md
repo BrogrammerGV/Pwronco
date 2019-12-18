@@ -1,6 +1,6 @@
  **Pwronco - WIP** . 
 
-  <img src="https://i.imgur.com/zj08Cmc.png=500x500" width="250" height="250">
+  <img src="https://i.imgur.com/74oFW4t.png" width="250" height="250">
 
 
 Pwronco utilizes the full power of multiple cutting edge Open Source tools for web development.
