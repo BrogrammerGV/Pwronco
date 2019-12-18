@@ -1,6 +1,6 @@
  **Pwronco - WIP** . 
  
- ![Image of Help](https://i.imgur.com/74oFW4t.png)
+ ![Image of Help](https://i.imgur.com/74oFW4t.png | width=250)
 
 Pwronco utilizes the full power of multiple cutting edge Open Source tools for web development.
 
@@ -28,6 +28,6 @@ Need to inlcude this line for local development due to Service Worker generation
 **Sometimes the Service Worker can struggle to clear itself out inside chrome**
 **If this happens to you: Clear out your data manually via the Application tab in the Chrome Dev Tools**
 
-![Image of Help](https://i.imgur.com/zj08Cmc.png)
+![Image of Help](https://i.imgur.com/zj08Cmc.png | width=500)
 
 
